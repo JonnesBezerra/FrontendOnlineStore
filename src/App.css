@@ -104,3 +104,38 @@ main {
 .add-to-cart {
   cursor: pointer;
 }
+
+/* Cart button =================================================== */
+.logo {
+  max-height: 70px;
+}
+
+li {
+  list-style: none;
+}
+
+.fa, .fas {
+  font-family: FontAwesome , sans-serif;
+}
+
+ul li a {
+  color: #343a40;
+  font-size: 1.1rem;
+}
+
+.cart:hover {
+  color: #d60e96;
+  text-decoration: none;
+}
+
+ul li a .cart-basket {
+  background-color: #418deb;
+  border-radius: 50%;
+  color: white;
+  font-size: 0.6rem;
+  height: 15px;
+  position: absolute;
+  right: -5px;
+  top: -6px;
+  width: 15px;
+}
