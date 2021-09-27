@@ -67,7 +67,14 @@ main {
 }
 
 .search input {
+  border-radius: 20px;
+  padding: 3px 10px;
   width: 80%;
+}
+
+.search button {
+  border-radius: 20px;
+  padding: 3px 8px;
 }
 
 .cart-space {
