@@ -105,7 +105,9 @@ main {
   cursor: pointer;
 }
 
-/* Cart button =================================================== */
+/* Cart button ===================================================
+source: https://jsfiddle.net/solodev/rpuLfkg5/ */
+
 .logo {
   max-height: 70px;
 }
