@@ -53,6 +53,25 @@ main {
 
 .article {
   padding-left: 20px;
+  width: 100%;
+}
+
+.top-page {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.search {
+  width: 100%;
+}
+
+.search input {
+  width: 80%;
+}
+
+.cart-space {
+  width: 60px;
 }
 
 .product-card {
@@ -110,6 +129,10 @@ source: https://jsfiddle.net/solodev/rpuLfkg5/ */
 
 .logo {
   max-height: 70px;
+}
+
+ul {
+  width: 40px;
 }
 
 li {

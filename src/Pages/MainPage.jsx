@@ -32,7 +32,7 @@ class MainPage extends Component {
     const { query } = this.state;
 
     return (
-      <div>
+      <div className="search">
         <input
           type="text"
           id="search-bar"
@@ -67,8 +67,10 @@ class MainPage extends Component {
       <main>
         <ListCategories handleCategoryClick={ this.handleCategoryClick } />
         <section className="article">
-          <CartButton />
-          {this.renderSearchBar()}
+          <div className="top-page">
+            {this.renderSearchBar()}
+            <CartButton />
+          </div>
           {doQuery ? (
             <ProductsList
               query={ query }
