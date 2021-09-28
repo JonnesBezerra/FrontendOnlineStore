@@ -25,7 +25,7 @@ class ProductDetails extends Component {
 
   render() {
     const { product } = this.state;
-    const { addToCartHandler } = this.props;
+    const { addToCartHandler, shoppingCartItens } = this.props;
     return (
       <div>
         <div>
@@ -45,7 +45,7 @@ class ProductDetails extends Component {
         >
           Adicionar ao carrinho
         </div>
-        <CartButton />
+        <CartButton shoppingCartItens={ shoppingCartItens } />
       </div>
     );
   }
@@ -58,6 +58,7 @@ ProductDetails.propTypes = {
     }),
   }).isRequired,
   addToCartHandler: PropTypes.func.isRequired,
+  shoppingCartItens: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default ProductDetails;

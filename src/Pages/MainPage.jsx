@@ -62,14 +62,14 @@ class MainPage extends Component {
 
   render() {
     const { query, doQuery, categoryID } = this.state;
-    const { addToCartHandler } = this.props;
+    const { addToCartHandler, shoppingCartItens } = this.props;
     return (
       <main>
         <ListCategories handleCategoryClick={ this.handleCategoryClick } />
         <section className="article">
           <div className="top-page">
             {this.renderSearchBar()}
-            <CartButton />
+            <CartButton shoppingCartItens={ shoppingCartItens } />
           </div>
           {doQuery ? (
             <ProductsList
@@ -86,6 +86,7 @@ class MainPage extends Component {
 
 MainPage.propTypes = {
   addToCartHandler: PropTypes.func.isRequired,
+  shoppingCartItens: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default MainPage;

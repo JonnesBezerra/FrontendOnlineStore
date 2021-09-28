@@ -84,6 +84,7 @@ class App extends Component {
               path="/:id"
               render={ (props) => (<ProductDetails
                 addToCartHandler={ this.addToCartHandler }
+                shoppingCartItens={ shoppingCartItens }
                 { ...props }
               />) }
             />
@@ -91,7 +92,10 @@ class App extends Component {
               exact
               path="/"
               render={ () => (
-                <MainPage addToCartHandler={ this.addToCartHandler } />
+                <MainPage
+                  addToCartHandler={ this.addToCartHandler }
+                  shoppingCartItens={ shoppingCartItens }
+                />
               ) }
             />
           </Switch>
