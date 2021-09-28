@@ -1,7 +1,7 @@
 // Agradecimentos ao Daniel Roberto Turma 10 Tribo B, Lucas Martins Turma 10 Tribo B
 
 import React, { Component } from 'react';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, HashRouter as Router } from 'react-router-dom';
 
 import './App.css';
 
@@ -63,7 +63,7 @@ class App extends Component {
     const { shoppingCartItens } = this.state;
     return (
       <div>
-        <BrowserRouter>
+        <Router>
           <Header />
           <Switch>
             <Route
@@ -99,7 +99,7 @@ class App extends Component {
               ) }
             />
           </Switch>
-        </BrowserRouter>
+        </Router>
       </div>
     );
   }
