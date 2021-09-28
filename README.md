@@ -1,12 +1,54 @@
-### Termos de acordos
+# Este é o repositório do projeto Frontend Online Store
 
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe
+Frontend Online Store é um Web App de E-commerce que usa a [API do Mercado Livre](https://developers.mercadolivre.com.br/pt_br).
 
-# Boas vindas ao repositório do projeto de Front-End Online Store!
+---
 
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
+## Link para página web do Frontend Online Store
 
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
+<div align="center">
+  <a href="https://jonnesbezerra.github.io/FrontendOnlineStore/#/" target="_blank">
+    <img width=100px src="https://cdn2.iconfinder.com/data/icons/inficons-set-5/1000/link-chain-512.png" />
+  </a>
+</div>
+
+> ***PS: Possível lentidão e/ou indisponibilidade podem ocorrer devido aos servidores do Mercado Livre***
+
+---
+
+# Habilidades desenvolvidas nesse projeto foram:
+
+  * Entender o que são Métodos Ágeis
+  * Entender o que é Kanban
+  * Entender o que é Scrum
+  * Trabalhar em equipes utilizando Kanban ou Scrum de maneira eficaz
+  * Praticar todas as habilidades desenvolvidas até agora no módulo de Front-End
+
+# Instruções para rodar o projeto em sua máquina:
+
+  1. Clone o projeto em um diretório na sua máquina utilizando o seguinte comando no terminal:
+  ```bash 
+  git clone git@github.com:JonnesBezerra/FrontendOnlineStore.git
+  ```
+
+  2. Agora entre no diretório do projeto e instale as dependências com o seguinte comando:
+  ```bash
+  cd FrontendOnlineStore/ && npm install
+  ```
+  3. Depois que a instalação terminar finalmente você pode rodar o projeto digitando o seguinte comando:
+  ```bash
+  npm start
+  ```
+
+# Este projeto foi desenvolvido em equipe por:
+
+  1. [@PedroSincero](https://github.com/PedroSincero)
+  2. [@limapaulobsb](https://github.com/limapaulobsb)
+  3. [@gabzzz-dias](https://github.com/gabzzz-dias)
+  4. [@LucasRPontes](https://github.com/LucasRPontes)
+  5. [@JonnesBezerra](https://github.com/JonnesBezerra)
+
+---
 
 # Sumário
 
