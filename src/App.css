@@ -53,6 +53,32 @@ main {
 
 .article {
   padding-left: 20px;
+  width: 100%;
+}
+
+.top-page {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.search {
+  width: 100%;
+}
+
+.search input {
+  border-radius: 20px;
+  padding: 3px 10px;
+  width: 80%;
+}
+
+.search button {
+  border-radius: 20px;
+  padding: 3px 8px;
+}
+
+.cart-space {
+  width: 60px;
 }
 
 .product-card {
@@ -103,4 +129,45 @@ main {
 
 .add-to-cart {
   cursor: pointer;
+}
+
+/* Cart button ===================================================
+source: https://jsfiddle.net/solodev/rpuLfkg5/ */
+
+.logo {
+  max-height: 70px;
+}
+
+ul {
+  width: 40px;
+}
+
+li {
+  list-style: none;
+}
+
+.fa, .fas {
+  font-family: FontAwesome , sans-serif;
+}
+
+ul li a {
+  color: #343a40;
+  font-size: 1.5rem;
+}
+
+.cart:hover {
+  color: #d60e96;
+  text-decoration: none;
+}
+
+ul li a .cart-basket {
+  background-color: #418deb;
+  border-radius: 50%;
+  color: white;
+  font-size: 0.9rem;
+  height: 20px;
+  position: absolute;
+  right: -5px;
+  top: -6px;
+  width: 20px;
 }

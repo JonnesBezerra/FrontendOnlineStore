@@ -32,7 +32,7 @@ class MainPage extends Component {
     const { query } = this.state;
 
     return (
-      <div>
+      <div className="search">
         <input
           type="text"
           id="search-bar"
@@ -62,13 +62,15 @@ class MainPage extends Component {
 
   render() {
     const { query, doQuery, categoryID } = this.state;
-    const { addToCartHandler } = this.props;
+    const { addToCartHandler, shoppingCartItens } = this.props;
     return (
       <main>
         <ListCategories handleCategoryClick={ this.handleCategoryClick } />
         <section className="article">
-          <CartButton />
-          {this.renderSearchBar()}
+          <div className="top-page">
+            {this.renderSearchBar()}
+            <CartButton shoppingCartItens={ shoppingCartItens } />
+          </div>
           {doQuery ? (
             <ProductsList
               query={ query }
@@ -84,6 +86,7 @@ class MainPage extends Component {
 
 MainPage.propTypes = {
   addToCartHandler: PropTypes.func.isRequired,
+  shoppingCartItens: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default MainPage;
